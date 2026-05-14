@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FreshStart Home Decluttering & Cleaning</title>
+    <title>FreshStart Home Services</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -11,23 +11,38 @@
 
     <header class="hero">
         <h1>FreshStart Home Decluttering & Cleaning</h1>
-        <p>Indoor & Outdoor Refresh Services</p>
-        <a href="#services" class="btn">View Services</a>
+        <p>Simple, stress‑free indoor & outdoor refresh services</p>
+        <a href="#services" class="btn">Explore Services</a>
     </header>
 
-    <section id="about" class="section">
-        <h2>Why Choose FreshStart?</h2>
-        <p>I make home refreshes simple, stress‑free, and beautifully organized. 
-        Specializing in small to medium projects that create big transformations.</p>
+    <section id="about" class="section about">
+        <h2>Hi, I'm Keli 👋</h2>
+        <p>I help busy people reclaim their space with small‑to‑medium cleaning and decluttering projects that make a big difference.  
+        My goal is to make your home feel lighter, calmer, and easier to enjoy.</p>
     </section>
 
+    <!-- INDOOR SERVICES -->
     <section id="services" class="section">
         <h2>Indoor Services</h2>
 
         <div class="card-grid">
 
             <div class="card">
+                <div class="icon">✨</div>
+                <h3>Mini Reset</h3>
+                <p class="desc">A quick tidy that instantly lifts the room.</p>
+                <ul>
+                    <li>Surface wipe</li>
+                    <li>Light dusting</li>
+                    <li>Quick bathroom OR kitchen refresh</li>
+                    <li>Small clutter reset</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <div class="icon">🧽</div>
                 <h3>Surface Cleaning</h3>
+                <p class="desc">Light cleaning for everyday messes.</p>
                 <ul>
                     <li>Counters & tables</li>
                     <li>Light dusting</li>
@@ -36,7 +51,9 @@
             </div>
 
             <div class="card">
+                <div class="icon">🚿</div>
                 <h3>Bathroom Refresh</h3>
+                <p class="desc">A clean, fresh bathroom without the deep‑clean price.</p>
                 <ul>
                     <li>Sink & counter wipe</li>
                     <li>Toilet wipe-down</li>
@@ -46,7 +63,9 @@
             </div>
 
             <div class="card">
+                <div class="icon">🍽️</div>
                 <h3>Kitchen Tidy</h3>
+                <p class="desc">A quick kitchen reset that makes cooking easier.</p>
                 <ul>
                     <li>Counter wipe</li>
                     <li>Light dish reset</li>
@@ -55,7 +74,9 @@
             </div>
 
             <div class="card">
+                <div class="icon">📦</div>
                 <h3>Indoor Decluttering</h3>
+                <p class="desc">Small spaces organized with care.</p>
                 <ul>
                     <li>Closets</li>
                     <li>Drawers</li>
@@ -67,13 +88,16 @@
         </div>
     </section>
 
+    <!-- OUTDOOR SERVICES -->
     <section class="section">
         <h2>Outdoor Services</h2>
 
         <div class="card-grid">
 
             <div class="card">
+                <div class="icon">🧹</div>
                 <h3>Porch Sweeping</h3>
+                <p class="desc">A clean, welcoming entryway.</p>
                 <ul>
                     <li>Sweep debris</li>
                     <li>Corner tidy</li>
@@ -82,8 +106,81 @@
             </div>
 
             <div class="card">
+                <div class="icon">☀️</div>
                 <h3>Patio Refresh</h3>
+                <p class="desc">Your outdoor space, reset and ready to enjoy.</p>
                 <ul>
                     <li>Wipe tables & chairs</li>
                     <li>Sweep or blow debris</li>
-                    <li>Light organizing and decluttering</li>
+                    <li>Light organizing</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section">
+        <h2>Pricing</h2>
+
+        <div class="pricing-grid">
+
+            <div class="price-card">
+                <button class="price-toggle">Mini Reset — $45</button>
+                <div class="price-content">
+                    <ul>
+                        <li><strong>Time:</strong> ~20–30 minutes</li>
+                        <li>Surface wipe</li>
+                        <li>Light dusting</li>
+                        <li>Quick bathroom OR kitchen refresh</li>
+                        <li>Small clutter reset</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <button class="price-toggle">Standard Refresh — $75</button>
+                <div class="price-content">
+                    <ul>
+                        <li><strong>Time:</strong> ~45–60 minutes</li>
+                        <li>Kitchen tidy</li>
+                        <li>Bathroom refresh</li>
+                        <li>Bedroom reset</li>
+                        <li>Light organizing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="price-card">
+                <button class="price-toggle">Deep Tidy — $120</button>
+                <div class="price-content">
+                    <ul>
+                        <li><strong>Time:</strong> ~75–90 minutes</li>
+                        <li>Full surface cleaning</li>
+                        <li>Bathroom + kitchen detail</li>
+                        <li>Declutter hot spots</li>
+                        <li>Light laundry fold</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 FreshStart Home Services</p>
+        <p>kelimonroe21websites@gmail.com</p>
+    </footer>
+
+    <script>
+        const toggles = document.querySelectorAll('.price-toggle');
+        toggles.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+            });
+        });
+    </script>
+
+</body>
+</html>
