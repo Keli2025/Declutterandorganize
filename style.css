@@ -45,6 +45,34 @@ body {
 .btn:hover {
     background: #3a5a85;
 }
+.center-contact-btn {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.center-contact-btn .btn-primary {
+  display: inline-block;
+  width: auto;
+  padding: 12px 28px;
+}
+.btn-outline {
+  display: inline-block;
+  padding: 12px 28px;
+  border: 2px solid #ff7a00;
+  color: #ff7a00;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.btn-outline:hover {
+  background: #ff7a00;
+  color: white;
+}
 
 /* Sections */
 .section {
